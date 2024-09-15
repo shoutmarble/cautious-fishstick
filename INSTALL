@@ -1,0 +1,8 @@
+ 
+docker buildx build -t next/nextui:234 . 
+
+docker run -it -p 3000:3000 -p 9229:9229 next/nextui:234 ash
+
+cd /opt/my-nextui-app
+npm run dev
+
